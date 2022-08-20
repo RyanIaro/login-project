@@ -12,7 +12,7 @@ export function AuthRoute(props: any):React.ReactElement {
     useEffect(() => {
         Authcheck();
         return () => Authcheck();
-    }, [auth, Authcheck()]);
+    }, [auth, Authcheck]);
 
     const Authcheck = onAuthStateChanged(auth, (user) => {
         if(user) {
